@@ -7,7 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build:gh": "ng build --prod --base-href 'https://vlad.vidac.software'",
+    "deploy:gh": "npx ngh --dir=dist/portfolio"
   },
   "private": true,
   "dependencies": {
