@@ -1,0 +1,12 @@
+@import "../../scss/abstracts/variables";
+
+.typewriter {
+  width: 100%;
+  height: fit-content;
+
+  h1 {
+    color: $dark;
+    padding: 50px;
+    margin: 0;
+  }
+}

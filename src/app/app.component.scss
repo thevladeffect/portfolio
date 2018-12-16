@@ -1,0 +1,28 @@
+@import "../scss/abstracts/variables";
+
+sticky-header {
+  z-index: 1000;
+  background-color: $primary;
+  height: fit-content;
+}
+
+.logo {
+  width: 50px;
+  margin: 15px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+.page {
+  background-color: $light;
+  height: fit-content;
+}
+
+.empty {
+  background-color: $light;
+  height: 75px;
+}
