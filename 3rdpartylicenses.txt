@@ -291,8 +291,6 @@ Apache-2.0
 @angular/core
 MIT
 
-ngx-typed-js
-
 @angular/common
 MIT
 
@@ -301,6 +299,8 @@ MIT
 
 @angular/animations
 MIT
+
+ngx-typed-js
 
 zone.js
 MIT
