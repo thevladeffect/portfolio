@@ -1,0 +1,63 @@
+@import "../../scss/abstracts/variables";
+
+:host {
+  width: 100%;
+  background-color: $dark;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  @media(min-width: $mobile-min-width) {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+.logo {
+  width: 150px;
+  margin: 15px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  opacity: .05;
+
+  display: none;
+  @media(min-width: $mobile-min-width) {
+    display: block;
+  }
+}
+
+.social-icons {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  margin-left: 0;
+  justify-self: center;
+  @media(min-width: $mobile-min-width) {
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: auto;
+    justify-self: flex-end;
+  }
+}
+
+.icon {
+  color: white;
+  font-size: 3rem;
+  &:not(:last-child) {
+    margin-right: 2rem;
+  }
+  @media(min-width: $mobile-min-width) {
+    margin-right: 5rem;
+  }
+
+  transition: opacity .25s;
+  opacity: .75;
+  &:hover {
+    opacity: 1;
+  }
+}
+

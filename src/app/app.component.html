@@ -1,9 +1,79 @@
-<sticky-header>
-  <img class="logo" src="../assets/logo.png" alt="logo"/>
-</sticky-header>
+<header [class.visible]="header.isVisible"
+        [class.hidden]="!header.isVisible">
+  <a href="#" class="href">
+    <img class="logo" src="../assets/logo.png" alt="logo"/>
+  </a>
+</header>
 <div class="content">
-  <div class="empty"></div>
   <div class="hello">
     <hello></hello>
   </div>
+  <div class="about">
+    <div class="card">
+      <div class="title">
+        Frontend
+      </div>
+      <div class="description">
+        I love the immediate feedback of bringing ideas to life in the browser.
+      </div>
+      <div class="chips">
+        <div class="chip">Angular</div>
+        <div class="chip">Javascript</div>
+        <div class="chip">Typescript</div>
+        <div class="chip">CSS</div>
+        <div class="chip">SCSS</div>
+        <div class="chip">RxJs</div>
+        <div class="chip">Backbone</div>
+        <div class="chip">Marionette</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="title">
+        Backend
+      </div>
+      <div class="description">
+        <ngx-typed-js
+          [strings]="['\noptimization.', '\nperformance.', '\nsecurity.', '\nstability.']"
+          [typeSpeed]="60"
+          [backSpeed]="20"
+          [loop]="true">
+          Back-end development is all about <div class="typing"></div>
+        </ngx-typed-js>
+      </div>
+      <div class="chips">
+        <div class="chip">Ruby</div>
+        <div class="chip">Node.js</div>
+        <div class="chip">Rails</div>
+        <div class="chip">Sinatra</div>
+        <div class="chip">Express</div>
+        <div class="chip">Nest.js</div>
+        <div class="chip">JWT</div>
+        <div class="chip">Postgres</div>
+        <div class="chip">Mongo</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="title">
+        DevOps
+      </div>
+      <div class="description">
+        <ngx-typed-js
+          [strings]="['In a world of deadlines automation is king.']"
+          [startDelay]="2000"
+          [showCursor]="false"
+          [typeSpeed]="70">
+          <div class="typing"></div>
+        </ngx-typed-js>
+      </div>
+      <div class="chips">
+        <div class="chip">Heroku</div>
+        <div class="chip">Docker</div>
+        <div class="chip">docker-compose</div>
+        <div class="chip">AWS</div>
+        <div class="chip">Vagrant</div>
+        <div class="chip">TravisCI</div>
+      </div>
+    </div>
+  </div>
 </div>
+<footer></footer>

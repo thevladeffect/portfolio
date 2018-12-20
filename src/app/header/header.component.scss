@@ -1,0 +1,11 @@
+@import "../../scss/abstracts/variables";
+
+:host {
+  width: 100%;
+  background-color: $primary;
+  height: fit-content;
+
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}

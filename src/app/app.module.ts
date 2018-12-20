@@ -1,23 +1,27 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
+import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 
 import {NgxTypedJsModule} from 'ngx-typed-js';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 
 import {AppComponent} from './app.component';
-import {StickyHeaderComponent} from './sticky-header/sticky-header.component';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {HeaderComponent} from './header/header.component';
 import {HelloComponent} from './hello/hello.component';
+import {FooterComponent} from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    StickyHeaderComponent,
-    HelloComponent
+    HeaderComponent,
+    HelloComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
+    NoopAnimationsModule,
     NgxTypedJsModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
