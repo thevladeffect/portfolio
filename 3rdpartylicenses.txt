@@ -292,6 +292,7 @@ Apache-2.0
 MIT
 
 ngx-typed-js
+MIT
 
 @fortawesome/fontawesome-svg-core
 MIT
