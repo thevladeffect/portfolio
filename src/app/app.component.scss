@@ -107,7 +107,7 @@ header {
     .title {
       font-weight: bolder;
       font-size: 3.4rem;
-      margin-top: -.95rem;
+      margin-top: -.9rem;
       margin-left: -.75rem;
       text-transform: uppercase;
 
@@ -170,16 +170,16 @@ header {
     }
     justify-content: center;
 
+    flex-wrap: wrap;
+
     .sample {
       display: flex;
       flex-direction: column;
       align-items: center;
 
       background-color: $dark;
-      min-height: 200px;
-      @media(min-width: $tablet-min-width) {
-        min-height: 12vw;
-      }
+
+      height: 200px;
 
       width: 75%;
       @media(min-width: $mobile-min-width) {
@@ -265,6 +265,20 @@ header {
         background-color: white;
         &:before {
           background-image: url("../assets/gripe.png");
+        }
+      }
+
+      &.gripe {
+        background-color: white;
+        &:before {
+          background-image: url("../assets/gripe.png");
+        }
+      }
+
+      &.merge {
+        background-color: white;
+        &:before {
+          background-image: url("../assets/merge.png");
         }
       }
     }
