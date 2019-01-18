@@ -1,0 +1,81 @@
+{
+  "configVersion": 1,
+  "index": "https://vlad.vidac.software/index.html",
+  "assetGroups": [
+    {
+      "name": "Vlad Vidac",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://vlad.vidac.software/favicon.ico",
+        "https://vlad.vidac.software/index.html",
+        "https://vlad.vidac.software/main.1aca4f9fbde749e83d43.js",
+        "https://vlad.vidac.software/polyfills.05e428c7deb03eca82a1.js",
+        "https://vlad.vidac.software/runtime.b57bf819d5bdce77f1c7.js",
+        "https://vlad.vidac.software/styles.0933ced61f0045f9aa17.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://vlad.vidac.software/assets/gripe.png",
+        "https://vlad.vidac.software/assets/icons/icon-128x128.png",
+        "https://vlad.vidac.software/assets/icons/icon-144x144.png",
+        "https://vlad.vidac.software/assets/icons/icon-152x152.png",
+        "https://vlad.vidac.software/assets/icons/icon-192x192.png",
+        "https://vlad.vidac.software/assets/icons/icon-384x384.png",
+        "https://vlad.vidac.software/assets/icons/icon-512x512.png",
+        "https://vlad.vidac.software/assets/icons/icon-72x72.png",
+        "https://vlad.vidac.software/assets/icons/icon-96x96.png",
+        "https://vlad.vidac.software/assets/logo.png",
+        "https://vlad.vidac.software/assets/meanco.png",
+        "https://vlad.vidac.software/assets/merge.png",
+        "https://vlad.vidac.software/assets/ngx-typed.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://vlad.vidac.software/assets/gripe.png": "7bd14abac0283cbd60883e32799b41d6318a23d7",
+    "https://vlad.vidac.software/assets/icons/icon-128x128.png": "1394dc8c93a6edd6e29e15544d7e0f2135a8c22c",
+    "https://vlad.vidac.software/assets/icons/icon-144x144.png": "7d7f6fcd2a70d2006f1222d5a20b0d86d4f61f23",
+    "https://vlad.vidac.software/assets/icons/icon-152x152.png": "88214ed45ab93ec4089f489d7db9df903a647657",
+    "https://vlad.vidac.software/assets/icons/icon-192x192.png": "0f46b88c6e2280b542111ea6ec0abda68154fa16",
+    "https://vlad.vidac.software/assets/icons/icon-384x384.png": "6d10959788c39aaf516b2c203cff0dad1e03da3b",
+    "https://vlad.vidac.software/assets/icons/icon-512x512.png": "ba7b5e8ff40ab8ef494013a25aa8fdf79573f817",
+    "https://vlad.vidac.software/assets/icons/icon-72x72.png": "6ca21e2e4f786efd7ad45889b166abf35712f463",
+    "https://vlad.vidac.software/assets/icons/icon-96x96.png": "9d252014161bdfdaa1481c168093f6446bed14dc",
+    "https://vlad.vidac.software/assets/logo.png": "d56eb5d3261c2a7f4f1c2071d19940c4fb57ab63",
+    "https://vlad.vidac.software/assets/meanco.png": "59992906a60f32830cd9e38e5f32a945e6c7fa27",
+    "https://vlad.vidac.software/assets/merge.png": "1bed59d7667ad3e4ac6948c1e01faebb455fdef6",
+    "https://vlad.vidac.software/assets/ngx-typed.png": "91362fe73646ec9a6b5b651dd7d11f42c1832fb8",
+    "https://vlad.vidac.software/favicon.ico": "9e096ed2077fe76e4ed5abb3f7512746f8b3341e",
+    "https://vlad.vidac.software/index.html": "e62df3f526daac1eaa0c2d6eec99950c59873f31",
+    "https://vlad.vidac.software/main.1aca4f9fbde749e83d43.js": "76dc7fda3d65692b1d36a07b0e257ab964b373ce",
+    "https://vlad.vidac.software/polyfills.05e428c7deb03eca82a1.js": "ce68d153e9b9b6d26b625069c0ee99ae09c6f255",
+    "https://vlad.vidac.software/runtime.b57bf819d5bdce77f1c7.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
+    "https://vlad.vidac.software/styles.0933ced61f0045f9aa17.css": "4eae89fa3f57b85c488f026e263a00265c71a991"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}

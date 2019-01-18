@@ -420,6 +420,9 @@ to represent the company, product, or service to which they refer.**
 @angular/animations
 MIT
 
+@angular/service-worker
+MIT
+
 zone.js
 MIT
 The MIT License
