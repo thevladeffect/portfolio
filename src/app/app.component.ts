@@ -7,7 +7,7 @@ import {HeaderComponent} from './header/header.component';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  @ViewChild(HeaderComponent) header: HeaderComponent;
+  @ViewChild(HeaderComponent, { static: true }) header: HeaderComponent;
 
   constructor() {
   }
