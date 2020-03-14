@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1558100113752,
+  "timestamp": 1584202319023,
   "index": "https://vlad.vidac.software/index.html",
   "assetGroups": [
     {
@@ -10,10 +10,11 @@
       "urls": [
         "https://vlad.vidac.software/favicon.ico",
         "https://vlad.vidac.software/index.html",
-        "https://vlad.vidac.software/main.318b17dcd18f3e7e1c24.js",
-        "https://vlad.vidac.software/polyfills.7e61eeabe4f75fabb7d3.js",
-        "https://vlad.vidac.software/runtime.26209474bfa8dc87a77c.js",
-        "https://vlad.vidac.software/styles.0933ced61f0045f9aa17.css"
+        "https://vlad.vidac.software/main.defeebe2658e79a33800.js",
+        "https://vlad.vidac.software/polyfills-es5.0dcf690db9a8e24baa07.js",
+        "https://vlad.vidac.software/polyfills.4c4ddd3fd216e0499f29.js",
+        "https://vlad.vidac.software/runtime.689ba4fd6cadb82c1ac2.js",
+        "https://vlad.vidac.software/styles.f515d01f9fe2b2cfc902.css"
       ],
       "patterns": []
     },
@@ -55,11 +56,12 @@
     "https://vlad.vidac.software/assets/merge.png": "1bed59d7667ad3e4ac6948c1e01faebb455fdef6",
     "https://vlad.vidac.software/assets/ngx-typed.png": "91362fe73646ec9a6b5b651dd7d11f42c1832fb8",
     "https://vlad.vidac.software/favicon.ico": "9e096ed2077fe76e4ed5abb3f7512746f8b3341e",
-    "https://vlad.vidac.software/index.html": "12b99f14bdfde726dea3e23ef1cbe0566dd18d37",
-    "https://vlad.vidac.software/main.318b17dcd18f3e7e1c24.js": "f3575f30b4613241d7fefe063ae7712ea3f47422",
-    "https://vlad.vidac.software/polyfills.7e61eeabe4f75fabb7d3.js": "6946e10a03311677a01490b8e91741668e64e17e",
-    "https://vlad.vidac.software/runtime.26209474bfa8dc87a77c.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
-    "https://vlad.vidac.software/styles.0933ced61f0045f9aa17.css": "4eae89fa3f57b85c488f026e263a00265c71a991"
+    "https://vlad.vidac.software/index.html": "d54ec42cbc8268cde0bc32ff7383a1230b056b70",
+    "https://vlad.vidac.software/main.defeebe2658e79a33800.js": "879a7be2cb08f03243a9e66bd47b201d0bab5e99",
+    "https://vlad.vidac.software/polyfills-es5.0dcf690db9a8e24baa07.js": "a7f31a4e9107ebe891c04e3eb8397eff7c35d94e",
+    "https://vlad.vidac.software/polyfills.4c4ddd3fd216e0499f29.js": "753bb81c574d9dbc62fd5c4c135830394d988370",
+    "https://vlad.vidac.software/runtime.689ba4fd6cadb82c1ac2.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "https://vlad.vidac.software/styles.f515d01f9fe2b2cfc902.css": "c4593610336cf663c9147a6240b0bc4b0e844c4f"
   },
   "navigationUrls": [
     {
