@@ -1,20 +1,22 @@
 {
   "configVersion": 1,
-  "timestamp": 1584202319023,
+  "timestamp": 1640642111383,
   "index": "https://vlad.vidac.software/index.html",
   "assetGroups": [
     {
       "name": "Vlad Vidac",
       "installMode": "prefetch",
       "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
       "urls": [
         "https://vlad.vidac.software/favicon.ico",
         "https://vlad.vidac.software/index.html",
-        "https://vlad.vidac.software/main.defeebe2658e79a33800.js",
-        "https://vlad.vidac.software/polyfills-es5.0dcf690db9a8e24baa07.js",
-        "https://vlad.vidac.software/polyfills.4c4ddd3fd216e0499f29.js",
-        "https://vlad.vidac.software/runtime.689ba4fd6cadb82c1ac2.js",
-        "https://vlad.vidac.software/styles.f515d01f9fe2b2cfc902.css"
+        "https://vlad.vidac.software/main.5787349c8263c30c.js",
+        "https://vlad.vidac.software/polyfills.665ab3c9509ce9df.js",
+        "https://vlad.vidac.software/runtime.c66b755d0ff5ada8.js",
+        "https://vlad.vidac.software/styles.9fd652cb11194f92.css"
       ],
       "patterns": []
     },
@@ -22,6 +24,9 @@
       "name": "assets",
       "installMode": "lazy",
       "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
       "urls": [
         "https://vlad.vidac.software/assets/gripe.png",
         "https://vlad.vidac.software/assets/icons/icon-128x128.png",
@@ -56,12 +61,11 @@
     "https://vlad.vidac.software/assets/merge.png": "1bed59d7667ad3e4ac6948c1e01faebb455fdef6",
     "https://vlad.vidac.software/assets/ngx-typed.png": "91362fe73646ec9a6b5b651dd7d11f42c1832fb8",
     "https://vlad.vidac.software/favicon.ico": "9e096ed2077fe76e4ed5abb3f7512746f8b3341e",
-    "https://vlad.vidac.software/index.html": "d54ec42cbc8268cde0bc32ff7383a1230b056b70",
-    "https://vlad.vidac.software/main.defeebe2658e79a33800.js": "879a7be2cb08f03243a9e66bd47b201d0bab5e99",
-    "https://vlad.vidac.software/polyfills-es5.0dcf690db9a8e24baa07.js": "a7f31a4e9107ebe891c04e3eb8397eff7c35d94e",
-    "https://vlad.vidac.software/polyfills.4c4ddd3fd216e0499f29.js": "753bb81c574d9dbc62fd5c4c135830394d988370",
-    "https://vlad.vidac.software/runtime.689ba4fd6cadb82c1ac2.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "https://vlad.vidac.software/styles.f515d01f9fe2b2cfc902.css": "c4593610336cf663c9147a6240b0bc4b0e844c4f"
+    "https://vlad.vidac.software/index.html": "b4c6a9a303a9df1d74c11cf64b0b6affa9e595b2",
+    "https://vlad.vidac.software/main.5787349c8263c30c.js": "8022be3c195417c52787efe55f94d859cfb8141d",
+    "https://vlad.vidac.software/polyfills.665ab3c9509ce9df.js": "137bce1c1a4164af83869efed8c33280946a9e0e",
+    "https://vlad.vidac.software/runtime.c66b755d0ff5ada8.js": "a80f0adee1e188da338d6a99223e36dae74f4dee",
+    "https://vlad.vidac.software/styles.9fd652cb11194f92.css": "20cbc865fc24b4e857ac4179e0645714a096ee13"
   },
   "navigationUrls": [
     {
@@ -80,5 +84,6 @@
       "positive": false,
       "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
     }
-  ]
+  ],
+  "navigationRequestStrategy": "performance"
 }
