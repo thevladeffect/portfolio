@@ -13,17 +13,31 @@
   padding: 50px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   height: calc(75vh - 75px);
-  text-align: center;
+
+  $bg-url: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC";
+  $bg-width: 0;
+  $bg-height: 50px;
+
+
+  @keyframes bg-scrolling {
+    100% {
+      background-position: $bg-width $bg-height;
+    }
+  }
+
+  background: url($bg-url) repeat 0 0;
+  animation: bg-scrolling 7s infinite;
+  animation-timing-function: linear;
 }
 
 .about {
-  clip-path: polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0% 90%, 0 0);
-  padding-top: 50%;
+  clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+  padding-top: 20%;
   padding-bottom: 50%;
   @media(min-width: $tablet-min-width) {
-    padding-top: 20%;
+    padding-top: 10%;
     padding-bottom: 20%;
   }
   background-color: $primary;
@@ -245,3 +259,4 @@
     }
   }
 }
+

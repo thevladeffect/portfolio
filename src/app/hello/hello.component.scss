@@ -1,6 +1,26 @@
 @import "../../scss/abstracts/variables";
 
+:host {
+  width: 100%;
+  height: 100%;
+  padding-top: calc((75vh - 75px) / 2);
+}
+
 .typing {
   color: $dark;
   font-size: 2.5rem;
+
+  @media(min-width: $mobile-min-width) {
+    font-size: 3rem;
+  }
+
+  @media(min-width: $tablet-min-width) {
+    font-size: 4rem;
+  }
+}
+
+ngx-typed-js {
+  :last-child {
+    margin-top: -2rem;
+  }
 }
