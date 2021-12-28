@@ -1,5 +1,6 @@
+@use '@angular/material' as mat;
+
 @import "../scss/abstracts/variables";
-@import "../scss/mixins/chip-pattern";
 @import "../scss/mixins/user-select";
 @import "../scss/mixins/deep-text";
 
@@ -24,6 +25,47 @@ header {
   }
 }
 
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  box-sizing: border-box;
+
+  &__links {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: row;
+
+    &__link {
+      background: $light;
+      color: $dark;
+      padding: .5rem 1rem;
+      border-radius: 20px;
+      @include mat.elevation(2);
+      cursor: pointer;
+      font-weight: bold;
+
+      &.active {
+        background: $dark;
+        color: $light;
+      }
+
+      &:not(:last-child) {
+        margin-right: .5rem;
+      }
+
+      &:hover {
+        @include mat.elevation(5);
+      }
+
+      &:active {
+        @include mat.elevation(2);
+      }
+    }
+  }
+}
+
 .logo {
   width: 50px;
   margin: 15px;
@@ -34,256 +76,6 @@ header {
   }
 }
 
-.content {
-  margin-top: 75px;
-  margin-bottom: 200px;
-  flex: 1 0 auto;
-}
-
-.hello {
-  padding: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: calc(75vh - 75px);
-  text-align: center;
-}
-
-.about {
-  clip-path: polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0% 90%, 0 0);
-  padding-top: 50%;
-  padding-bottom: 50%;
-  @media(min-width: $tablet-min-width) {
-    padding-top: 20%;
-    padding-bottom: 20%;
-  }
-  background-color: $primary;
-  @include chip-pattern();
-  background-attachment: fixed;
-
-  .title {
-    font-size: 2.5rem;
-    color: white;
-    font-weight: bolder;
-    text-align: center;
-    text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    padding-left: .5rem;
-    padding-right: .5rem;
-  }
-
-  .cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    @media(min-width: $tablet-min-width) {
-      align-items: unset;
-      flex-direction: row;
-    }
-    justify-content: center;
-  }
-
-  .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    background-color: white;
-    min-height: 300px;
-
-    width: 75%;
-    @media(min-width: $mobile-min-width) {
-      width: 50%;
-    }
-    @media(min-width: $tablet-min-width) {
-      width: 300px;
-    }
-
-    overflow: hidden;
-
-    border-radius: 3px;
-    margin: 2rem;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-
-    .title {
-      font-weight: bolder;
-      font-size: 3.4rem;
-      margin-top: -.9rem;
-      margin-left: -.75rem;
-      text-transform: uppercase;
-
-      align-self: flex-start;
-
-      @include deep-text();
-    }
-
-    .description {
-      padding: 2rem;
-      color: $dark;
-      text-align: center;
-      font-size: 1.1rem;
-      font-weight: bold;
-    }
-
-    .chips {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding: 2rem;
-
-      margin-top: auto;
-
-      .chip {
-        background-color: $primary;
-        color: white;
-        font-size: .9rem;
-
-        border-radius: 25px;
-        padding: .5rem;
-        margin: .1rem;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-      }
-    }
-  }
-}
-
-.work {
-  padding-top: 10%;
-
-  .title {
-    font-size: 2.5rem;
-    color: $dark;
-    font-weight: bolder;
-    text-align: center;
-    text-shadow: 0 1px 6px rgba(0,0,0,0.16), 0 1px 6px rgba(0,0,0,0.23);
-    padding-left: .5rem;
-    padding-right: .5rem;
-  }
-
-  .samples {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    @media(min-width: $tablet-min-width) {
-      align-items: unset;
-      flex-direction: row;
-    }
-    justify-content: center;
-
-    flex-wrap: wrap;
-
-    .sample {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      background-color: $dark;
-
-      height: 200px;
-
-      width: 75%;
-      @media(min-width: $mobile-min-width) {
-        width: 50%;
-      }
-      @media(min-width: $tablet-min-width) {
-        width: 300px;
-      }
-
-      border-radius: 3px;
-      margin: 2rem;
-      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-
-      &.image {
-        position: relative;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        a {
-          z-index: 100;
-          opacity: 0;
-          background-color: white;
-          text-decoration: none;
-          color: $dark;
-          padding: .5rem;
-          border-radius: 20px;
-          width: 100px;
-          text-align: center;
-          transition: all .2s;
-          font-weight: bolder;
-          box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-
-          &:hover {
-            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-          }
-
-          &:active {
-            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-          }
-        }
-
-        &:before {
-          content: "";
-          position: absolute;
-          top: -10px; left: -10px;
-          width: 120%; height: 120%;
-          background-image: url("../assets/meanco.png");
-          background-size: 110%;
-          background-repeat: no-repeat;
-          transition: all .5s ease;
-        }
-
-        &:hover {
-          a {
-            opacity: 1;
-          }
-          &:before {
-            filter: blur(7px);
-          }
-        }
-      }
-
-      &.meanco {
-        background-color: darkgray;
-        &:before {
-          background-image: url("../assets/meanco.png");
-        }
-      }
-
-      &.typed {
-        background-color: white;
-        &:before {
-          background-image: url("../assets/ngx-typed.png");
-          left: -20px;
-          top: 0;
-          background-size: 100%;
-        }
-      }
-
-      &.gripe {
-        background-color: white;
-        &:before {
-          background-image: url("../assets/gripe.png");
-        }
-      }
-
-      &.gripe {
-        background-color: white;
-        &:before {
-          background-image: url("../assets/gripe.png");
-        }
-      }
-
-      &.merge {
-        background-color: white;
-        &:before {
-          background-image: url("../assets/merge.png");
-        }
-      }
-    }
-  }
-}
 
 footer {
   flex-shrink: 0;
